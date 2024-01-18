@@ -149,10 +149,20 @@
                                                         </div>
                                                     </div>          
                                                     <div class="col-md-6 m-b-40">
-                                                        <div class="desc-list-container has-border">
-                                                            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&title=Aerodrome%20Schedule&showNav=1&showPrint=0&showTabs=0&showCalendars=0&src=YWVyb2Ryb21lQHVjc2QuZWR1&color=%23039BE5" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                                                        <!-- Toggle Switch -->
+                                                        <div class="calendar-toggle">
+                                                            <button id="aeroButton" class="active">Aerodrome Lab</button>
+                                                            <button id="safeButton">Agile Safety Lab</button>
                                                         </div>
-                                                    </div>       
+                                                    
+                                                        <!-- Calendar Iframe -->
+                                                        <div class="desc-list-container has-border">
+                                                            <!-- Aero Calendar (Initially Displayed) -->
+                                                            <iframe id="aeroCalendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&title=Aerodrome%20Schedule&showNav=1&showPrint=0&showTabs=0&showCalendars=0&src=YWVyb2Ryb21lQHVjc2QuZWR1&color=%23039BE5" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                                                            <!-- Safe Calendar (Initially Hidden) -->
+                                                            <iframe id="safeCalendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&title=Safety%20Agile%20Lab&showNav=1&showPrint=0&showTabs=0&showCalendars=0&showTz=1&src=Y180NDVhYWEyNTg3YjQ4MWQxNDEwMWMzMmFlZjIyMWNkMTZmOGEwNzFiNGJmZGRkYmI3NjU4MGQ2NmQ3OTUzMDczQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237CB342&color=%230B8043" style="border-width:0; display: none;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                                                        </div>
+                                                    </div>     
                                                 </div>    
 
                                                 
@@ -208,6 +218,23 @@
 
         <script type='text/javascript' src='assets/js/main.js'></script>        
         <!--  Scripts Ends -->
+
+        <!-- JavaScript for Toggle Switch -->
+        <script>
+            document.getElementById('aeroButton').addEventListener('click', function() {
+                document.getElementById('aeroCalendar').style.display = 'block';
+                document.getElementById('safeCalendar').style.display = 'none';
+                this.classList.add('active');
+                document.getElementById('safeButton').classList.remove('active');
+            });
+
+            document.getElementById('safeButton').addEventListener('click', function() {
+                document.getElementById('safeCalendar').style.display = 'block';
+                document.getElementById('aeroCalendar').style.display = 'none';
+                this.classList.add('active');
+                document.getElementById('aeroButton').classList.remove('active');
+            });
+        </script>
     
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

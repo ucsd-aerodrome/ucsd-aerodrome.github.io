@@ -72,75 +72,153 @@
                                     <div class="container m-t-90">
                                         <div class="row">                                    
                                             <div class="col-sm-12"> 
+                                                
+                                                <!-- Toggle Switch for Aero and Safe -->
+                                                <div class="calendar-toggle">
+                                                    <button id="aeroButton" class="active">Aerodrome Lab</button>
+                                                    <button id="safeButton">Agile Safety Lab</button>
+                                                </div>
+
                                                 <div class="heading-block m-b-10">
                                                     <h1 class="block-size-4">
                                                         Instructions
                                                     </h1>
                                                 </div>
-                                                <div class="text-block m-b-45">
-                                                    <p class="medium">
-                                                        This page provides instructions for using the Vicon motion capture system. Please follow the instructions carefully to avoid damaging the system.
-                                                    </p>
+
+                                                <!-- Content for Aero and Safe goes here -->
+                                                <div id="aeroContent">
+                                                    <div class="text-block m-b-45">
+                                                        <p class="medium">
+                                                            This page provides instructions for using the Vicon motion capture system. Please follow the instructions carefully to avoid damaging the system.
+                                                        </p>
+                                                    </div>
+                                                    <div class="row">                                    
+                                                        <div class="col-md-6 m-b-40">
+                                                            <div class="desc-list-container has-border">
+                                                                <div class="desc-list">
+                                                                    <h5>Turning on the Vicon motion capture system</h5>
+                                                                    <ul>
+                                                                        <li>Switch the power strip connected to the Cameras/Dlinks on.</li>
+                                                                        <li>Power on the PC.</li>
+                                                                        <li>(Recommended for Accuracy) Wait 45 minutes for the cameras to warm up internally.</li>
+                                                                        <li>Open the Vicon Tracker software.</li>
+                                                                        <li>Wait for all cameras to connect (green arrow next to each camera).</li>
+                                                                        <li>Drag and select each camera.</li>
+                                                                        <li>Go to Calibrate tab: 
+                                                                            <ul>
+                                                                                <li>Select masks and run for around 15 seconds (make sure the wand is not in the Aerodrome field), then hit finish.</li>
+                                                                                <li>Select Calibrate and go into the Aerodrome field with the wand and wave the wand around until each camera's pie chart fills up completely, the tracker software should automatically finish and calibrate the system.</li>
+                                                                                <li>Set the wand in the origin (handle is y axis, then follow right-hand rule, Z is up), and hit set origin.</li>
+                                                                                <li>The system should then be calibrated and you can take the wand out of the field.</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>To create an object, go to the object tab:
+                                                                            <ul>
+                                                                                <li>Hit control and drag the mouse cursor over the markers of the object you want to make.</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>          
+                                                        <div class="col-md-6 m-b-20">
+                                                            <div class="desc-list-container has-border">
+                                                                <div class="desc-list" >
+                                                                    <h5>Turning off the Vicon motion capture system</h5>
+                                                                    <ul>
+                                                                        <li>Close the tracker software. You do not need to save the calibration or objects (popup window, hit “Ignore All”). 
+                                                                        </li>
+                                                                        <li>Turn off the PC.</li>
+                                                                        <li>Switch the power to the Cameras/Dlinks off (the monitor is connected to the cameras currently).</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>    
+                                                        <div class="col-md-6 m-b-20">
+                                                            <div class="desc-list-container has-border">
+                                                                <div class="desc-list" >
+                                                                    <h5>Vicon Bridge</h5>
+                                                                    <ul>
+                                                                        <li>In order to be able to access data published by the Vicon software you need to utilize the Vicon bridge software: <a href="https://github.com/ethz-asl/vicon_bridge" style="color: #182B49;">Vicon Bridge</a>
+                                                                        </li>
+                                                
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>       
+                                                    </div>
                                                 </div>
+   
 
-
-                                                <div class="row">                                    
-                                                    <div class="col-md-6 m-b-40">
-                                                        <div class="desc-list-container has-border">
-                                                            <div class="desc-list">
-                                                                <h5>Turning on the Vicon motion capture system</h5>
-                                                                <ul>
-                                                                    <li>Switch the power strip connected to the Cameras/Dlinks on.</li>
-                                                                    <li>Power on the PC.</li>
-                                                                    <li>(Recommended for Accuracy) Wait 45 minutes for the cameras to warm up internally.</li>
-                                                                    <li>Open the Vicon Tracker software.</li>
-                                                                    <li>Wait for all cameras to connect (green arrow next to each camera).</li>
-                                                                    <li>Drag and select each camera.</li>
-                                                                    <li>Go to Calibrate tab: 
-                                                                        <ul>
-                                                                            <li>Select masks and run for around 15 seconds (make sure the wand is not in the Aerodrome field), then hit finish.</li>
-                                                                            <li>Select Calibrate and go into the Aerodrome field with the wand and wave the wand around until each camera's pie chart fills up completely, the tracker software should automatically finish and calibrate the system.</li>
-                                                                            <li>Set the wand in the origin (handle is y axis, then follow right-hand rule, Z is up), and hit set origin.</li>
-                                                                            <li>The system should then be calibrated and you can take the wand out of the field.</li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>To create an object, go to the object tab:
-                                                                        <ul>
-                                                                            <li>Hit control and drag the mouse cursor over the markers of the object you want to make.</li>
-                                                                        </ul>
-                                                                    </li>
-                                                                </ul>
+                                                <div id="safeContent" style="display: none;">
+                                                    <div class="text-block m-b-45">
+                                                        <p class="medium">
+                                                            This page provides instructions for using the Opti-track motion capture system. Please follow the instructions carefully to avoid damaging the system.
+                                                        </p>
+                                                    </div>
+    
+    
+                                                    <div class="row">                                    
+                                                        <div class="col-md-6 m-b-40">
+                                                            <div class="desc-list-container has-border">
+                                                                <div class="desc-list">
+                                                                    <h5>Turning on and Callibrating the Opti-track motion capture system if its off and uncalibrated</h5>
+                                                                    <ul>
+                                                                        <li>Power on the PC.</li>
+                                                                        <li>Open the Motive software.</li>
+                                                                        <li>Wait for all cameras to connect.</li>
+                                                                        <li>Select the "1" button in top bar for viewing.</li>
+                                                                        <li>Devices Connected like cameras and assets should show on the right side.</li>
+                                                                        <li>Go to Calibrate tab: 
+                                                                            <ul>
+                                                                                <li>Select "New Calibration".</li>
+                                                                                <li>Select "Clear Mask" then "Mask".</li>
+                                                                                <li>Full Calibrate: 
+                                                                                    <ul>
+                                                                                        <li>Select "CW-500" (Large area).</li>
+                                                                                        <li>Select all cameras.</li>
+                                                                                        <li>Calibrate with the wand and watch the lit circles on the cameras fill up.</li>
+                                                                                        <li>Return calibration wand.</li>
+                                                                                        <li>Set up the ground plane using the ground tool remebering right hand rule.</li>
+                                                                                        <li>Return ground tool.</li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>The system should then be calibrated.</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>To create an object, go to the object tab:
+                                                                            <ul>
+                                                                                <li>Hit control and drag the mouse cursor over the markers of the object you want to make.</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    </div>          
-                                                    <div class="col-md-6 m-b-20">
-                                                        <div class="desc-list-container has-border">
-                                                            <div class="desc-list" >
-                                                                <h5>Turning off the Vicon motion capture system</h5>
-                                                                <ul>
-                                                                    <li>Close the tracker software. You do not need to save the calibration or objects (popup window, hit “Ignore All”). 
-                                                                    </li>
-                                                                    <li>Turn off the PC.</li>
-                                                                    <li>Switch the power to the Cameras/Dlinks off (the monitor is connected to the cameras currently).</li>
-                                                                </ul>
+                                                        </div>          
+                                                        <div class="col-md-6 m-b-20">
+                                                            <div class="desc-list-container has-border">
+                                                                <div class="desc-list" >
+                                                                    <h5>Turning off the Opti-track motion capture system</h5>
+                                                                    <ul>
+                                                                        <li>Only do this if the PC has frozen otherwise the system should remain on.</li>
+                                                                        <li>Turn off the PC.</li>
+                                                                    </ul>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    </div>    
-                                                    <div class="col-md-6 m-b-20">
-                                                        <div class="desc-list-container has-border">
-                                                            <div class="desc-list" >
-                                                                <h5>Vicon Bridge</h5>
-                                                                <ul>
-                                                                    <li>In order to be able to access data published by the Vicon software you need to utilize the Vicon bridge software: <a href="https://github.com/ethz-asl/vicon_bridge" style="color: #182B49;">Vicon Bridge</a>
-                                                                    </li>
-                                            
-                                                                </ul>
+                                                        </div>    
+                                                        <div class="col-md-6 m-b-20">
+                                                            <div class="desc-list-container has-border">
+                                                                <div class="desc-list" >
+                                                                    <h5>Notes</h5>
+                                                                    <ul>
+                                                                        <li>Typically there is no reason to recallibrate everytime the system is used.</li>
+                                                                        <li>There is also no need shut down the software or computer after use.</li>
+                                                                    </ul>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    </div>       
-                                                </div>    
-
-
+                                                        </div>       
+                                                    </div>  
+                                                </div>
 
 
 
@@ -196,6 +274,23 @@
 
         <script type='text/javascript' src='assets/js/main.js'></script>      
         <!--  Scripts Ends -->
+
+        <!-- JavaScript for Toggle Switch -->
+        <script>
+            document.getElementById('aeroButton').addEventListener('click', function() {
+            document.getElementById('aeroContent').style.display = 'block';
+            document.getElementById('safeContent').style.display = 'none';
+            this.classList.add('active');
+            document.getElementById('safeButton').classList.remove('active');
+            });
+
+            document.getElementById('safeButton').addEventListener('click', function() {
+            document.getElementById('safeContent').style.display = 'block';
+            document.getElementById('aeroContent').style.display = 'none';
+            this.classList.add('active');
+            document.getElementById('aeroButton').classList.remove('active');
+            });
+        </script>
     
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

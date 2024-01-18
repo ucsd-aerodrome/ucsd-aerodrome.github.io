@@ -4525,4 +4525,25 @@ Portfolio Listing
   }
 }
 
+.calendar-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust the space between buttons */
+  margin-bottom: 20px; /* Space above the calendar iframe */
+}
+
+.calendar-toggle button {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: black; /* Default font color for all buttons */
+}
+
+.calendar-toggle button.active {
+  background-color: #000000;
+  color: white; /* Font color for the active button */
+}
+
+
 /*# sourceMappingURL=style.css.map */

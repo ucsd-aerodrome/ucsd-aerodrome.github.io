@@ -74,136 +74,271 @@
                                     <div class="container m-t-90">
                                         <div class="row">                                    
                                             <div class="col-sm-12"> 
+                                                
+                                                <!-- Toggle Switch for Aero and Safe -->
+                                                <div class="calendar-toggle">
+                                                    <button id="aeroButton" class="active">Aerodrome Lab</button>
+                                                    <button id="safeButton">Agile Safety Lab</button>
+                                                </div>
+
                                                 <div class="heading-block m-b-10">
                                                     <h1 class="block-size-4">
                                                         Code of Conduct
                                                     </h1>
                                                 </div>
-                                                <div class="text-block m-b-45">
-                                                    <p class="medium">
-                                                        This page establishes procedures for safe use of the UCSD Aerodrome and related Unmanned Aerial Vehicle operations. Due to the risks associated with using this facility, the safety procedures outlined below must be followed by all research staff and visitors.
-                                                    </p>
+
+                                                <!-- Content for Aero and Safe goes here -->
+                                                <div id="aeroContent">
+                                                    <!-- Aero lab rules content -->
+                                                    <div class="text-block m-b-45">
+                                                        <p class="medium">
+                                                            This page establishes procedures for safe use of the UCSD Aerodrome and related Unmanned Aerial Vehicle operations. Due to the risks associated with using this facility, the safety procedures outlined below must be followed by all research staff and visitors.
+                                                        </p>
+                                                    </div>
+                                                    <div class="row">                                    
+                                                        <div class="col-md-6 m-b-40">
+                                                            <div class="desc-list-container has-border">
+                                                                <div class="desc-list">
+                                                                    <h5>Registration and Access</h5>
+                                                                    <ul>
+                                                                        
+                                                                        <li>Any Aerodrome user must first register with the Aerodrome managers in order to have access to facility and the calendar.</li>
+                                                                        <li>Please schedule a time slot with the Aerodrome calendar to ensure that no time conflicts occur.</li>
+                                                                        <li>Access to the space is limited by key access. The office must be locked, except when in use. </li>
+                                                                        <li>Before leaving the Aerodrome make sure that the office is locked.<ul>
+                                                                        <li>Send an email that includes a picture of the key being placed back into the lockbox.</li></ul> </li>
+                                                                        
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="desc-list">
+                                                                    <h5>Lab and Computer Conduct</h5>
+                                                                    <ul>
+                                                                        <li> Turn off the Vicon system before leaving:
+                                                                            <ul>
+                                                                                <li>Make sure to turn off the power running to the Vicon Cameras and DLinks.</li>
+                                                                                <li>Turn off the Computer when not in use.</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>Lock the Aerodrome office before leaving:
+                                                                            <ul>
+                                                                                <li>Close the windows. Turn off the air conditioner.</li>
+                                                                                <li>Check that both the deadbolt and handle lock are locked.</li>
+                                                                                <li>Pull on the door to ensure that the Aerodrome is locked.</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>Keep the Aerodrome field and office clean!
+                                                                            <ul>
+                                                                                <li>The space should look exactly the same as how you first found it.</li>
+                                                                                <li>NO food or drinks are allowed in the Aerodrome office for safety reasons.</li>
+                                                                                <li>Water is allowed but please keep it away from the electrical equipment and off of the table with monitor.</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>Do not use the Aerodrome/Vicon PC for anything other than running the Vicon software:
+                                                                            <ul>
+                                                                                <li>Be responsible with the internet access.</li>
+                                                                                <li>Do not download software to the Aerodrome PC without consent from an Aerodrome manager. If consent was given, make sure the download is coming from a reliable source.</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>No manufacturing, such as drilling, cutting, soldering, or gluing, is allowed in the office.</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="desc-list">
+                                                                    <h5>Desks and Racks</h5>
+                                                                    <ul>
+                                                                        <li>Propellers must be removed when a robot is placed on the workbench.</li>
+                                                                        <li>Batteries should be charged in a designated area with no daisy-chaining of electrical cords.</li>
+                                                                        <li>A fire proof LiPo safety bag must be available.</li>
+                                                                        <li>You can store items such as drones on the racks however NO BATTERIES ARE ALLOWED TO BE STORED IN THE OFFICE!</li>
+                                                                    </ul>
+                                                                </div>
+    
+                                                            </div>
+                                                        </div>          
+                                                        <div class="col-md-6 m-b-20">
+                                                            <div class="desc-list-container has-border">
+                                                                <div class="desc-list">
+                                                                    <h5>Conducting Flights</h5>
+                                                                    <ul>
+                                                                        <li>All flights must be conducted within the netted area.</li>
+                                                                        <li>It is best to not have any person in the netted area during flight operations. If the operation
+                                                                            requires a person in the netted area during an experiment, it is strictly required that the person wears appropriate
+                                                                            personal protective equipment, especially protective eyewear.</li>
+                                                                        <li>Drones must not be flown closer than 2 m to any Vicon camera.</li>
+                                                                        <li>When operating a robots, the operator must be mentally alert and stay at least five feet away from the robot.</li>
+                                                                        <li>Prior to each flight and before termination of a flight, the pilot must verbally announce the flight plan to all crew members and give a countdown prior to launch or landing.</li>
+                                                                        <li>In the event of a fire, earthquake or evacuation, all flights must be immediately grounded and discontinued.</li>
+                                                                    </ul>
+                                                                 </div>
+                                                                 <div class="desc-list">
+                                                                    <h5>Accidents or Injuries</h5>
+                                                                    <ul>
+                                                                        <li>Any serious crash or aircraft incidents must be reported immediately to ehsfaa@ucsd.edu. This
+                                                                            includes fires and hazardous material spills.</li>
+                                                                        <li>Any injuries must be reported by visiting
+                                                                            http://blink.ucsd.edu/safety/occupational/reporting.html.</li>
+                                                                        <li>Administer proper first aid and ensure first-aid kit is stocked. Call 911 for emergencies.</li>
+                                                                        <li>Injured students should visit Student Health Services, or UCSD's Thornton Hospital for
+                                                                            emergencies. Injured employees should visit the UCSD Center for Occupational &
+                                                                            Environmental Medicine (COEM) clinic during UCSD Business Hours or Thornton Hospital for
+                                                                            emergencies or after-hours care.</li>
+                                                                        <li>Do not attempt to clean up any spill or release for which you are not fully trained and
+                                                                            equipped.</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="desc-list">
+                                                                    <h5>Fire Prevention</h5>
+                                                                    <ul>
+                                                                        <!-- <li>Place evacuation and fire plan map clearly visible in the facility.</li> -->
+                                                                        <li>An ABC fire extinguisher must be mounted near the office door.</li>
+                                                                        <!-- <li>A fire proof LiPo safety bag must be available for disposed batteries and a fire-retardant
+                                                                            battery recycle bucket to ensure batteries are not thrown in trash.</li>-->
+                                                                    </ul>
+                                                                </div>
+    
+                                                                <div class="desc-list">
+                                                                    <h5>Training</h5>
+                                                                    <ul>
+                                                                        <li>Follow the instructions listed in the instructions page.</li>
+                                                                    </ul>
+                                                                    <div class="btn-container solid">
+                                                                        <a href="./instructions.html" title="Instructions">INSTRUCTIONS</a>
+                                                                    </div>	
+                                                                </div>
+                                                            </div>
+                                                        </div>       
+                                                    </div>
                                                 </div>
 
-
-                                                <div class="row">                                    
-                                                    <div class="col-md-6 m-b-40">
-                                                        <div class="desc-list-container has-border">
-                                                            <div class="desc-list">
-                                                                <h5>Registration and Access</h5>
-                                                                <ul>
-                                                                    
-                                                                    <li>Any Aerodrome user must first register with the Aerodrome managers in order to have access to facility and the calendar.</li>
-                                                                    <li>Please schedule a time slot with the Aerodrome calendar to ensure that no time conflicts occur.</li>
-                                                                    <li>Access to the space is limited by key access. The office must be locked, except when in use. </li>
-                                                                    <li>Before leaving the Aerodrome make sure that the office is locked.<ul>
-                                                                    <li>Send an email that includes a picture of the key being placed back into the lockbox.</li></ul> </li>
-                                                                    
-                                                                </ul>
+                                    
+                                                <div id="safeContent" style="display: none;">
+                                                    <!-- Safe lab rules content -->
+                                                    <div class="text-block m-b-45">
+                                                        <p class="medium">
+                                                            This page establishes procedures for safe use of the UCSD Agile Safety Lab and related Unmanned Aerial Vehicle operations. Due to the risks associated with using this facility, the safety procedures outlined below must be followed by all research staff and visitors.
+                                                        </p>
+                                                    </div>
+                                                    <div class="row">                                    
+                                                        <div class="col-md-6 m-b-40">
+                                                            <div class="desc-list-container has-border">
+                                                                <div class="desc-list">
+                                                                    <h5>Registration and Access</h5>
+                                                                    <ul>
+                                                                        
+                                                                        <li>Any Agile Safety Lab user must first register with the Agile Safety Lab managers in order to have access to facility and the calendar.</li>
+                                                                        <li>Please schedule a time slot with the Agile Safety Lab calendar to ensure that no time conflicts occur.</li>
+                                                                        <li>Access to the space is limited by key access. This key access is given to one-two member(s) in a reseach group. </li>
+                                                                        <li>Before leaving the Agile Safety Lab make sure that the lab door closes behind you.</li></ul> </li>
+                                                                        
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="desc-list">
+                                                                    <h5>Lab and Computer Conduct</h5>
+                                                                    <ul>
+                                                                        <li> Turn off the Opti-Track system before leaving:
+                                                                            <ul>
+                                                                                <li>Make sure to turn off the power running to the Opti-Track Cameras and DLinks.</li>
+                                                                                <li>Turn off the Computer when not in use.</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>Keep the Agile Safety Lab field and desks clean!
+                                                                            <ul>
+                                                                                <li>The space should look exactly the same as how you first found it.</li>
+                                                                                <li>NO food or drinks are allowed in the Agile Safety Lab area for safety reasons.</li>
+                                                                                <li>Water is allowed but please keep it away from the electrical equipment and off of the table with monitor.</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>Do not use the Agile Safety Lab/Opti-Track PC for anything other than running the Vicon software:
+                                                                            <ul>
+                                                                                <li>Be responsible with the internet access.</li>
+                                                                                <li>Do not download software to the Agile Safety Lab PC without consent from an Agile Safety Lab manager. If consent was given, make sure the download is coming from a reliable source.</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>No manufacturing, such as drilling, cutting, soldering, or gluing, is allowed in the office.</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="desc-list">
+                                                                    <h5>Desks and Racks</h5>
+                                                                    <ul>
+                                                                        <li>Propellers must be removed when a robot is placed on the workbench.</li>
+                                                                        <li>Batteries should be charged in a designated area with no daisy-chaining of electrical cords.</li>
+                                                                        <li>A fire proof LiPo safety bag must be available.</li>
+                                                                    </ul>
+                                                                </div>
+    
+                                                                <div class="desc-list">
+                                                                    <h5>Lithium Battery Health and Safety</h5>
+                                                                    <ul>
+                                                                        <li>For extensive battery safety knowledge, visit <a href="https://urldefense.com/v3/__https://batteryuniversity.com__;!!Mih3wA!BbTdR6nm0PjF42ElleYzLHasW6jiHnrZOWqC5G-OgsgzPTudvA8fiP1apmmhRIzSp3_K73Y8559N2ag1_VJKrw$" target="_blank">Battery University</a>.</li>
+                                                                        <li><strong>Fire Safety:</strong> Use Class D extinguishers for battery fires. If unavailable, vacate the area due to toxic gas and alert emergency services.</li>
+                                                                        <li><strong>Handling Damaged Batteries:</strong> Avoid contact with crushed or severely damaged batteries. Once inert, safely handle them at a distance, soak in saltwater overnight outside, and then dispose at a <a href="https://urldefense.com/v3/__https://search.earth911.com/?what=Lithium-ion*Batteries__;Kw!!Mih3wA!BbTdR6nm0PjF42ElleYzLHasW6jiHnrZOWqC5G-OgsgzPTudvA8fiP1apmmhRIzSp3_K73Y8559N2ahod3fTSA$" target="_blank">lithium battery drop-off center</a>.</li>
+                                                                        <li><strong>Swollen Batteries:</strong> Do not use puffy batteries. Dispose of them following the steps for damaged batteries.</li>
+                                                                        <li><strong>Charging Precautions:</strong> Never leave charging batteries unattended. Do not charge hot batteries. Maximum charge voltage: 4.2v for lithium polymer, 4.1v for lithium ion.</li>
+                                                                        <li><strong>Multi-cell Batteries:</strong> Check individual cell voltages using a multimeter at least once per week. Measure voltage across adjacent pins on the balance lead.</li>
+                                                                        <li><strong>General Battery Safety:</strong> Do not mix battery chemistries, repair batteries, replace cells in multi-cell batteries, bend, stab, or short batteries.</li>
+                                                                        <li><strong>Interpreting Voltages and Degradation:</strong> Refer to specific tables for the relationship between voltage, state of charge, and rate of degradation. Voltages should be measured under no load conditions.</li>
+                                                                        <li><strong>Storage Guidelines:</strong> Store lithium batteries at 40-60% SoC, ideally at 50% (3.85v). Keeping SoC within 30-80% maximizes usable cycles.</li>
+                                                                        <li><strong>Degradation Signs:</strong> Incomplete charging, charger reporting excess mAh, or rapid voltage drops under load indicate degradation. Such batteries should be disposed of properly.</li>
+                                                                    </ul>
+                                                                </div>
+    
                                                             </div>
-                                                            <div class="desc-list">
-                                                                <h5>Lab and Computer Conduct</h5>
-                                                                <ul>
-                                                                    <li> Turn off the Vicon system before leaving:
-                                                                        <ul>
-                                                                            <li>Make sure to turn off the power running to the Vicon Cameras and DLinks.</li>
-                                                                            <li>Turn off the Computer when not in use.</li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>Lock the Aerodrome office before leaving:
-                                                                        <ul>
-                                                                            <li>Close the windows. Turn off the air conditioner.</li>
-                                                                            <li>Check that both the deadbolt and handle lock are locked.</li>
-                                                                            <li>Pull on the door to ensure that the Aerodrome is locked.</li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>Keep the Aerodrome field and office clean!
-                                                                        <ul>
-                                                                            <li>The space should look exactly the same as how you first found it.</li>
-                                                                            <li>NO food or drinks are allowed in the Aerodrome office for safety reasons.</li>
-                                                                            <li>Water is allowed but please keep it away from the electrical equipment and off of the table with monitor.</li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>Do not use the Aerodrome/Vicon PC for anything other than running the Vicon software:
-                                                                        <ul>
-                                                                            <li>Be responsible with the internet access.</li>
-                                                                            <li>Do not download software to the Aerodrome PC without consent from an Aerodrome manager. If consent was given, make sure the download is coming from a reliable source.</li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>No manufacturing, such as drilling, cutting, soldering, or gluing, is allowed in the office.</li>
-                                                                </ul>
+                                                        </div>          
+                                                        <div class="col-md-6 m-b-20">
+                                                            <div class="desc-list-container has-border">
+                                                                <div class="desc-list">
+                                                                    <h5>Conducting Flights</h5>
+                                                                    <ul>
+                                                                        <li>All flights must be conducted within the netted area.</li>
+                                                                        <li>It is best to not have any person in the netted area during flight operations. If the operation
+                                                                            requires a person in the netted area during an experiment, it is strictly required that the person wears appropriate
+                                                                            personal protective equipment, especially protective eyewear.</li>
+                                                                        <li>Drones must not be flown closer than 2 m to any Opti-Track camera.</li>
+                                                                        <li>When operating a robots, the operator must be mentally alert and stay at least five feet away from the robot.</li>
+                                                                        <li>Prior to each flight and before termination of a flight, the pilot must verbally announce the flight plan to all crew members and give a countdown prior to launch or landing.</li>
+                                                                        <li>In the event of a fire, earthquake or evacuation, all flights must be immediately grounded and discontinued.</li>
+                                                                    </ul>
+                                                                 </div>
+                                                                 <div class="desc-list">
+                                                                    <h5>Accidents or Injuries</h5>
+                                                                    <ul>
+                                                                        <li>Any serious crash or aircraft incidents must be reported immediately to ehsfaa@ucsd.edu. This
+                                                                            includes fires and hazardous material spills.</li>
+                                                                        <li>Any injuries must be reported by visiting
+                                                                            http://blink.ucsd.edu/safety/occupational/reporting.html.</li>
+                                                                        <li>Administer proper first aid and ensure first-aid kit is stocked. Call 911 for emergencies.</li>
+                                                                        <li>Injured students should visit Student Health Services, or UCSD's Thornton Hospital for
+                                                                            emergencies. Injured employees should visit the UCSD Center for Occupational &
+                                                                            Environmental Medicine (COEM) clinic during UCSD Business Hours or Thornton Hospital for
+                                                                            emergencies or after-hours care.</li>
+                                                                        <li>Do not attempt to clean up any spill or release for which you are not fully trained and
+                                                                            equipped.</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="desc-list">
+                                                                    <h5>Fire Prevention</h5>
+                                                                    <ul>
+                                                                        <!-- <li>Place evacuation and fire plan map clearly visible in the facility.</li> -->
+                                                                        <li>An ABC fire extinguisher must be mounted near the office door.</li>
+                                                                        <!-- <li>A fire proof LiPo safety bag must be available for disposed batteries and a fire-retardant
+                                                                            battery recycle bucket to ensure batteries are not thrown in trash.</li>-->
+                                                                    </ul>
+                                                                </div>
+    
+                                                                <div class="desc-list">
+                                                                    <h5>Training</h5>
+                                                                    <ul>
+                                                                        <li>Follow the instructions listed in the instructions page.</li>
+                                                                    </ul>
+                                                                    <div class="btn-container solid">
+                                                                        <a href="./optiinstructions.html" title="Instructions">INSTRUCTIONS</a>
+                                                                    </div>	
+                                                                </div>
                                                             </div>
-                                                            <div class="desc-list">
-                                                                <h5>Desks and Racks</h5>
-                                                                <ul>
-                                                                    <li>Propellers must be removed when a robot is placed on the workbench.</li>
-                                                                    <li>Batteries should be charged in a designated area with no daisy-chaining of electrical cords.</li>
-                                                                    <li>A fire proof LiPo safety bag must be available.</li>
-                                                                    <li>You can store items such as drones on the racks however NO BATTERIES ARE ALLOWED TO BE STORED IN THE OFFICE!</li>
-                                                                </ul>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>          
-                                                    <div class="col-md-6 m-b-20">
-                                                        <div class="desc-list-container has-border">
-                                                            <div class="desc-list">
-                                                                <h5>Conducting Flights</h5>
-                                                                <ul>
-                                                                    <li>All flights must be conducted within the netted area.</li>
-                                                                    <li>It is best to not have any person in the netted area during flight operations. If the operation
-                                                                        requires a person in the netted area during an experiment, it is strictly required that the person wears appropriate
-                                                                        personal protective equipment, especially protective eyewear.</li>
-                                                                    <li>Drones must not be flown closer than 2 m to any Vicon camera.</li>
-                                                                    <li>When operating a robots, the operator must be mentally alert and stay at least five feet away from the robot.</li>
-                                                                    <li>Prior to each flight and before termination of a flight, the pilot must verbally announce the flight plan to all crew members and give a countdown prior to launch or landing.</li>
-                                                                    <li>In the event of a fire, earthquake or evacuation, all flights must be immediately grounded and discontinued.</li>
-                                                                </ul>
-                                                             </div>
-                                                             <div class="desc-list">
-                                                                <h5>Accidents or Injuries</h5>
-                                                                <ul>
-                                                                    <li>Any serious crash or aircraft incidents must be reported immediately to ehsfaa@ucsd.edu. This
-                                                                        includes fires and hazardous material spills.</li>
-                                                                    <li>Any injuries must be reported by visiting
-                                                                        http://blink.ucsd.edu/safety/occupational/reporting.html.</li>
-                                                                    <li>Administer proper first aid and ensure first-aid kit is stocked. Call 911 for emergencies.</li>
-                                                                    <li>Injured students should visit Student Health Services, or UCSD's Thornton Hospital for
-                                                                        emergencies. Injured employees should visit the UCSD Center for Occupational &
-                                                                        Environmental Medicine (COEM) clinic during UCSD Business Hours or Thornton Hospital for
-                                                                        emergencies or after-hours care.</li>
-                                                                    <li>Do not attempt to clean up any spill or release for which you are not fully trained and
-                                                                        equipped.</li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="desc-list">
-                                                                <h5>Fire Prevention</h5>
-                                                                <ul>
-                                                                    <!-- <li>Place evacuation and fire plan map clearly visible in the facility.</li> -->
-                                                                    <li>An ABC fire extinguisher must be mounted near the office door.</li>
-                                                                    <!-- <li>A fire proof LiPo safety bag must be available for disposed batteries and a fire-retardant
-                                                                        battery recycle bucket to ensure batteries are not thrown in trash.</li>-->
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="desc-list">
-                                                                <h5>Training</h5>
-                                                                <ul>
-                                                                    <li>Follow the instructions listed in the instructions page.</li>
-                                                                </ul>
-                                                                <div class="btn-container solid">
-                                                                    <a href="./instructions.html" title="Instructions">INSTRUCTIONS</a>
-                                                                </div>	
-                                                            </div>
-                                                        </div>
-                                                    </div>       
-                                                </div>    
+                                                        </div>       
+                                                    </div>  
 
 
 
-
-
-                                                
 
                                                 <div class="row m-t-50 m-b-100">                                    
                                                     <div class="col-sm-12">
@@ -256,6 +391,23 @@
 
         <script type='text/javascript' src='assets/js/main.js'></script>        
         <!--  Scripts Ends -->
+
+        <!-- JavaScript for Toggle Switch -->
+        <script>
+            document.getElementById('aeroButton').addEventListener('click', function() {
+            document.getElementById('aeroContent').style.display = 'block';
+            document.getElementById('safeContent').style.display = 'none';
+            this.classList.add('active');
+            document.getElementById('safeButton').classList.remove('active');
+            });
+
+            document.getElementById('safeButton').addEventListener('click', function() {
+            document.getElementById('safeContent').style.display = 'block';
+            document.getElementById('aeroContent').style.display = 'none';
+            this.classList.add('active');
+            document.getElementById('aeroButton').classList.remove('active');
+            });
+        </script>
     
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
